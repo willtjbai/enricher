@@ -1,8 +1,10 @@
-import logging
-
-import geoip2.webservice
-import geoip2.errors
+"""
+Geo fetcher with MaxMind API
+"""
 import os
+
+import geoip2.errors
+import geoip2.webservice
 from dotenv import load_dotenv
 
 load_dotenv()

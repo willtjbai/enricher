@@ -21,7 +21,12 @@ def write_failed_row(uid, msg, path=os.path.dirname(os.path.realpath(__file__))+
 
 
 def mask_ip(text):
-    # Define the regex pattern to identify IP addresses
+    """
+    Mask potential sensitive IP data in string
+    :param text:
+    :return:
+    """
+    # Regex pattern to identify IP addresses
     ip_pattern = r"((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)"
     return re.sub(ip_pattern, "**********", text)
 

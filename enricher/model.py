@@ -3,6 +3,9 @@ from enricher.utils import write_failed_row
 
 
 class BaseTask(object):
+    """
+    Base task model
+    """
 
     def __init__(self, uid):
         self.uid = uid
@@ -12,6 +15,10 @@ class BaseTask(object):
 
 
 class Ip2CountryTask(BaseTask):
+    """
+    Task for getting Country based on IP
+    """
+
     def __init__(self, uid, ip):
         super().__init__(uid)
         self.ip = ip
@@ -29,7 +36,7 @@ class Ip2CountryTask(BaseTask):
 
     def __repr__(self):
         ip = self.ip
-        # Find the index of the second dot ('.') in the string
+        # Mask the second half of the IP address for compliance
         second_dot_index = ip.find('.', ip.find('.') + 1) + 1
         first_half = ip[:second_dot_index]
         second_half = ip[second_dot_index:]
@@ -38,6 +45,7 @@ class Ip2CountryTask(BaseTask):
 
     def __eq__(self, other):
         return self.uid == other.uid and self.ip == other.ip
+
 
 class Result(object):
     def __init__(self, uid, country):

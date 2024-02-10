@@ -9,7 +9,9 @@ from enricher.utils import *
 
 
 class DataSource(ABC):
-
+    """
+    Source reader, new source should extend DataSource
+    """
     @abstractmethod
     def read_source(self) -> Optional[list]:
         pass

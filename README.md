@@ -7,17 +7,17 @@ Enrich **country** information based on **IP address**. For data compliance purp
 
 ```console
 # clone the repo
-$ git clone https://github.com/willtjbai/enricher.git
+git clone https://github.com/willtjbai/enricher.git
 
 # change the working directory to enricher
-$ cd enricher
+cd enricher
 
 # install the requirements
-$ python3 -m pip install -r requirements.txt
+python3 -m pip install -r requirements.txt
 
 # Setup MaxMind account and key in .env file
-$ cp .env_template .env
-$ vi .env
+cp .env_template .env
+vi .env
 ```
 ## Usage
 ```console

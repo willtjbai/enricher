@@ -5,7 +5,9 @@ from abc import ABC, abstractmethod
 
 
 class BaseWriter(ABC):
-
+    """
+    Base writer, new writer should extend this class
+    """
     @abstractmethod
     def write_output(self, output: list) -> bool:
         pass
@@ -16,7 +18,9 @@ class BaseWriter(ABC):
 
 
 class CsvWriter(BaseWriter):
-
+    """
+    CSV writer, write a list of object to CSV file
+    """
     def __init__(self, path: str):
         self.path = path
 

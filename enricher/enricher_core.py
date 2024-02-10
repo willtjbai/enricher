@@ -1,3 +1,6 @@
+"""
+Core enrichment process
+"""
 import logging
 import os
 
