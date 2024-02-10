@@ -43,9 +43,13 @@ python3 -m enricher
 
 Run with specified input file and output file
 ```commandline
-python3 -m enricher -f ../../Desktop/sample_input.csv ./enriched_output.csv
+python3 -m enricher -f ../../Desktop/sample_input.csv -o ./enriched_output.csv
 ```
 
+Try it on colab
+https://colab.research.google.com/drive/14wi7tupBquGSe6feTxnvjTiCmDvIjtk6?usp=sharing
+
+## Error handling
 Failed rows will be logged at ./out/failed_rows.log  
 
 <img src="./resources/failed.png">
