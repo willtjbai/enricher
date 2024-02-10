@@ -1,0 +1,4 @@
+user_id, name, email, ip_address
+1, Tom, tom@gmail.com, 10.1.111.123
+2, Jerry, jerry@outlook.com, 83.2.211,133
+3, Bob, bob@123.com, 104.193.9.182
