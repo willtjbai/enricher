@@ -86,3 +86,5 @@ python3 -m unittest --verbose
 3. Use mock in unit test 
 4. Allow configuration for default paths
 5. Cache IP->Country to avoid deplicate api call
+6. Static code analysis, pylint etc.
+7. CICD
